@@ -1,0 +1,12 @@
+# These JSON artifacts are integrity-checked as exact bytes. Preserve their
+# existing CRLF serialization in the Git object and on every checkout.
+/ml/models/poisson_baseline/v1/model.json -text
+/ml/models/poisson_baseline/v2/model_metadata.json -text
+/ml/models/poisson_baseline/v2/training_config.json -text
+/ml/models/poisson_baseline/v2/fixture_manifest.json -text
+
+# Registry source-code hashes pin LF bytes. Keep the checkout LF on Windows.
+/ml/baselines/poisson.py text eol=lf
+/ml/features/feature_engineering_v2.py text eol=lf
+/ml/training/fold_preprocessing.py text eol=lf
+/ml/train_poisson_comparison.py text eol=lf
