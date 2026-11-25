@@ -18,8 +18,9 @@ jobs:
           python-version: "3.12"
           cache: pip
           cache-dependency-path: backend/requirements.txt
-      - name: Install test runtime
-        run: python -m pip install pytest joblib numpy scipy "scikit-learn>=1.7,<2"
+      - name: Install backend and test dependencies
+        working-directory: backend
+        run: python -m pip install -r requirements.txt
       - name: Run model registry tests
         working-directory: backend
         run: python -m pytest tests/test_model_registry.py -q

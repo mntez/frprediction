@@ -1,25 +1,35 @@
 # Phase 3G.2.2 — Linux CI Verification
 
-## Outcome: Ubuntu run could not be dispatched
+## Outcome: blocked; security gate remains open
 
-The workflow was **not run on Ubuntu**, so there is no workflow run URL, Git reference, or Ubuntu test count to report. The workspace has no `.git` directory or configured remote, and GitHub CLI and Docker are unavailable. WSL is installed as a Windows command but no Linux subsystem is installed. Without a GitHub repository reference or local Linux runner, this workspace cannot start the hosted Ubuntu job.
+The hosted workflow was triggered after publishing the project. It did **not** pass, and the available GitHub summary does not expose enough output to determine the pytest root cause or whether the individual symlink tests ran. No registry or workflow code was changed in response.
 
-This is an environment limitation, not a reported workflow failure. No code changes were made in response.
+| Check | Result |
+|---|---|
+| Repository/reference | `mntez/frprediction`, branch `codex/publish-frprediction-project` |
+| Commit tested | `af576671ac7cb6b52b5fe8e30c20243a49abcf97` |
+| GitHub Actions run | [45554416162](https://github.com/mntez/frprediction/actions/runs/45554416162) |
+| Ubuntu job | Failed at `Run model registry tests`; process exit code 4 |
+| Windows hosted job | Failed at `Run model registry tests`; process exit code 1 |
+| Hosted test counts | Unavailable from the run summary |
+| Hosted file-symlink test | Exact result unavailable; cannot confirm pass or skip |
+| Hosted directory-symlink test | Exact result unavailable; cannot confirm pass or skip |
+| Local Windows focused suite | 14 passed, 2 skipped |
+| Local symlink cases | `test_symlink_outside_model_root_is_rejected` and `test_symlinked_directory_outside_model_root_is_rejected` both skipped because local Windows denied symlink creation |
+| Local full backend suite | 88 passed, 2 skipped |
 
-## Workflow and Windows verification
+## Diagnosis available
 
-Inspected `.github/workflows/model-registry-security.yml`. It triggers on push and pull request and has an OS matrix of `ubuntu-latest` and `windows-latest`. Both jobs use Python 3.12 and run the focused registry suite from `backend`:
+GitHub's job metadata confirms setup, checkout, Python setup, and dependency installation all completed successfully on both operating systems. The pytest command step then exited nonzero. The public run page shows exit codes but requires sign-in to view logs. The GitHub Actions job-log API returned HTTP 403 with `Must have admin rights to Repository`.
 
-`python -m pytest tests/test_model_registry.py -q`
+Therefore the observed failure is in the CI test command, but its underlying cause cannot be diagnosed from the accessible output. In particular, exit code 4 alone does not establish whether Ubuntu collected or executed either symlink test. No test count or symlink result is inferred.
 
-The Windows job remains configured. Running the same command locally on Windows produced:
+## Workflow configuration
 
-- **14 passed, 2 skipped**.
-- `test_symlink_outside_model_root_is_rejected` — skipped because Windows denied symlink creation.
-- `test_symlinked_directory_outside_model_root_is_rejected` — skipped because Windows denied symlink creation.
+`.github/workflows/model-registry-security.yml` is present on the tested branch. It runs the registry test file on an OS matrix containing `ubuntu-latest` and `windows-latest`, using Python 3.12. The local Windows results demonstrate that the ordinary registry tests remain compatible; Windows skipped only the two OS-dependent symlink creation cases locally.
 
-Therefore, Windows compatibility for the ordinary registry tests is confirmed; neither symlink containment case actually executed locally. Ubuntu execution is specifically needed to verify those two tests run rather than skip.
+## Next verification needed
 
-## Required to complete hosted verification
+An account with access to the run logs must provide the failed pytest output (or grant the required Actions log access). After diagnosing the output, any proposed fix should be reviewed separately, as requested. Then rerun the Ubuntu job and verify both named symlink tests are reported as passed, not skipped. Keep the registry research-only and do not start Phase 3G.3 until that verification succeeds.
 
-The workflow file must be present in a GitHub-hosted repository and triggered by a push or pull request. After that run completes, record its run URL and commit SHA, confirm both named symlink tests show as passed (not skipped), and capture the full registry test counts. No model, dataset, evaluation artifact, registry metadata, or database was modified for this phase.
+No model training, prediction generation, activation, database change, or protected-artifact modification was performed for this verification update.
