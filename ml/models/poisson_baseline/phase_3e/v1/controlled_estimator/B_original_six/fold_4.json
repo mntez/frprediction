@@ -1,0 +1,97 @@
+{
+  "away_coefficients": [
+    -0.005643260708601292,
+    -0.030588549684806524,
+    0.04382083892531079,
+    0.02271176047330585,
+    0.09130246084359028,
+    -0.020198192202127277,
+    -0.00026476296420827934,
+    -0.00026476296420827934,
+    -0.008134688023724973,
+    -0.008134688023724973
+  ],
+  "away_intercept": 0.2428950970638245,
+  "configuration_sha256": "d8ee5716aa08dc3d9b0d04f993e947349b25f283863324f24cad5f9b127a1e1a",
+  "feature_names_out": [
+    "numeric__x0",
+    "numeric__x1",
+    "numeric__x2",
+    "numeric__x3",
+    "numeric__x4",
+    "numeric__x5",
+    "numeric__missingindicator_x1",
+    "numeric__missingindicator_x2",
+    "numeric__missingindicator_x4",
+    "numeric__missingindicator_x5"
+  ],
+  "features": [
+    "home_home_matches_played",
+    "home_home_goals_scored_avg",
+    "home_home_goals_conceded_avg",
+    "away_away_matches_played",
+    "away_away_goals_scored_avg",
+    "away_away_goals_conceded_avg"
+  ],
+  "fit_training_count": 2370,
+  "fit_training_ids_sha256": "3ca95b315d4178e943e1093bacb3c7edf26c3eecd16440c02409d1c7a1e0157f",
+  "home_coefficients": [
+    0.023071751307476355,
+    0.11676090431573287,
+    -0.03098592866696333,
+    -0.007883315456079796,
+    -0.02745052315909338,
+    0.031072436259644856,
+    -0.002781553294347983,
+    -0.002781553294347983,
+    0.010798981517709139,
+    0.010798981517709139
+  ],
+  "home_intercept": 0.4555951776188206,
+  "preprocessing": {
+    "numeric_means": [
+      9.587341772151898,
+      1.5817110637548484,
+      1.2388012261684225,
+      9.569620253164556,
+      1.2425923521456401,
+      1.5775820458800924,
+      0.05527426160337553,
+      0.05527426160337553,
+      0.05527426160337553,
+      0.05527426160337553
+    ],
+    "numeric_medians": [
+      9.0,
+      1.5,
+      1.1875,
+      9.0,
+      1.1666666666666667,
+      1.5384615384615385
+    ],
+    "numeric_scales": [
+      6.053363965324892,
+      0.7092379594278084,
+      0.5696005832018375,
+      6.04578217721027,
+      0.5992310101427027,
+      0.6050077147405634,
+      0.22851480828947854,
+      0.22851480828947854,
+      0.22851480828947854,
+      0.22851480828947854
+    ]
+  },
+  "settings": {
+    "alpha": 1.0,
+    "estimator": "sklearn.linear_model.PoissonRegressor",
+    "fit_intercept": true,
+    "max_iter": 1000,
+    "rate_clamp": [
+      0.05,
+      8.0
+    ],
+    "score_grid_max_goals": 32,
+    "tol": 1e-07
+  }
+}

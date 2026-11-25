@@ -1,0 +1,32 @@
+# Dependencies and generated output
+**/node_modules/
+**/.next/
+**/out/
+**/build/
+**/.venv/
+**/venv/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# Tooling
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+.DS_Store
+*.pem
+*.tsbuildinfo
+next-env.d.ts
+coverage/
+*.log
+.vercel/

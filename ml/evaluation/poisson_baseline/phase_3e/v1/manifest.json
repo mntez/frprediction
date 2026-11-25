@@ -1,0 +1,49 @@
+{
+  "configuration_sha256": "d8ee5716aa08dc3d9b0d04f993e947349b25f283863324f24cad5f9b127a1e1a",
+  "dataset_sha256": {
+    "B": "b33d54eb7da5eed619d97b054d1ca29031f8533bf3bf2b9729f1a4dc7661d09e",
+    "C": "7656a4694f315f02913e55260d7599f7034ab27b5a671ca10ffd902375a461d5"
+  },
+  "excluded_awarded_fixture_ids": [
+    542704
+  ],
+  "final_test_predictions_read_for_integrity_only": true,
+  "final_test_used_for_analysis": false,
+  "folds": [
+    {
+      "name": "fold_1",
+      "train_end": "2025-12-31",
+      "train_rows": 954,
+      "validation_end": "2026-03-31",
+      "validation_rows": 682,
+      "validation_start": "2026-01-01"
+    },
+    {
+      "name": "fold_2",
+      "train_end": "2026-03-31",
+      "train_rows": 1636,
+      "validation_end": "2026-06-30",
+      "validation_rows": 421,
+      "validation_start": "2026-04-01"
+    },
+    {
+      "name": "fold_3",
+      "train_end": "2026-06-30",
+      "train_rows": 2057,
+      "validation_end": "2026-09-30",
+      "validation_rows": 313,
+      "validation_start": "2026-08-01"
+    },
+    {
+      "name": "fold_4",
+      "train_end": "2026-09-30",
+      "train_rows": 2370,
+      "validation_end": "2026-10-30",
+      "validation_rows": 186,
+      "validation_start": "2026-10-01"
+    }
+  ],
+  "ordered_validation_fixture_ids_sha256": "2a48039a65005130813b527e90c8d913f7ebfa56e1f64ac6868105453b6c2850",
+  "schema": "phase_3e_rolling_research_v1",
+  "validation_fixture_count": 1602
+}

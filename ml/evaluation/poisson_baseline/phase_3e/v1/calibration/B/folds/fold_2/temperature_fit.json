@@ -1,0 +1,15 @@
+{
+  "boundary_selected": false,
+  "candidate_range": [
+    0.5,
+    2.0
+  ],
+  "candidate_step": 0.01,
+  "configuration_sha256": "d8ee5716aa08dc3d9b0d04f993e947349b25f283863324f24cad5f9b127a1e1a",
+  "fit_data": "in-sample predictions on this outer fold training partition only; no validation or test labels",
+  "fit_rows": 1636,
+  "fit_training_fixture_ids_sha256": "570a77afd178229b67ca96cf4407f54e3f8f34662a62ac5ea27b1e02c3d39cea",
+  "method": "single scalar multiclass temperature scaling",
+  "temperature": 0.89,
+  "training_log_loss_at_selected_temperature": 1.0442709165060913
+}

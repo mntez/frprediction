@@ -1,0 +1,97 @@
+{
+  "cutoff_date": "2026-10-31",
+  "dataset_sha256": "fef1f4a64294baf6fe93c833f13ab15bc0409e05d058c7520073ef2d58a1a718",
+  "limitations": [
+    "Small, provider-limited dataset with sparse earlier history.",
+    "Independent Poisson goals omit correlation and changing team strength over time.",
+    "The test uses pre-match rolling features, including earlier test-period results only after they occurred.",
+    "This baseline is for comparison and is not production-ready."
+  ],
+  "metrics": {
+    "goal_prediction": {
+      "away_goals_mae": 0.9632959743533079,
+      "home_goals_mae": 0.9576787663675626,
+      "mae": 0.9604873703604353,
+      "rmse": 1.260615487147221,
+      "total_goals_mae": 1.4085952726876476,
+      "total_goals_rmse": 1.7840901305954262
+    },
+    "market_brier_scores": {
+      "btts": 0.24824438934945728,
+      "over_1_5": 0.17174661037186667,
+      "over_2_5": 0.24666950976276436,
+      "over_3_5": 0.2102609068782204
+    },
+    "one_x_two": {
+      "accuracy": 0.5104895104895105,
+      "brier_score": 0.5780252880086383,
+      "calibration": {
+        "bins": [
+          {
+            "accuracy": 0.14285714285714285,
+            "count": 14,
+            "lower_bound": 0.3,
+            "mean_confidence": 0.38073456396478866,
+            "upper_bound": 0.4
+          },
+          {
+            "accuracy": 0.4375,
+            "count": 64,
+            "lower_bound": 0.4,
+            "mean_confidence": 0.45195680155398726,
+            "upper_bound": 0.5
+          },
+          {
+            "accuracy": 0.5897435897435898,
+            "count": 39,
+            "lower_bound": 0.5,
+            "mean_confidence": 0.5348819884603494,
+            "upper_bound": 0.6
+          },
+          {
+            "accuracy": 0.7619047619047619,
+            "count": 21,
+            "lower_bound": 0.6,
+            "mean_confidence": 0.6398843722173722,
+            "upper_bound": 0.7
+          },
+          {
+            "accuracy": 1.0,
+            "count": 2,
+            "lower_bound": 0.7,
+            "mean_confidence": 0.7453194037294204,
+            "upper_bound": 0.8
+          },
+          {
+            "accuracy": 0.6666666666666666,
+            "count": 3,
+            "lower_bound": 0.8,
+            "mean_confidence": 0.8238608246748979,
+            "upper_bound": 0.9
+          }
+        ],
+        "top_class_accuracy": 0.5104895104895105,
+        "top_class_expected_calibration_error": 0.0694999545105569,
+        "top_class_mean_confidence": 0.5071028660347147
+      },
+      "log_loss": 0.9719374456715457
+    }
+  },
+  "model_version": "v1",
+  "probability_validation": {
+    "all_1x2_distributions_sum_to_1": true,
+    "all_probability_values_in_0_to_1": true,
+    "test_rows_checked": 143
+  },
+  "split_policy": "train match_date < cutoff; test match_date >= cutoff; no shuffled rows",
+  "test_date_range": {
+    "end": "2026-11-21",
+    "start": "2026-10-31"
+  },
+  "test_rows": 143,
+  "training_date_range": {
+    "end": "2026-10-30",
+    "start": "2025-08-15"
+  },
+  "training_rows": 515
+}

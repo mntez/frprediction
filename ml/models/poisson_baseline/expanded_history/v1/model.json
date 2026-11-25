@@ -1,0 +1,31 @@
+{
+  "configuration_sha256": "544baa11f00faefac53aec835a622cbcc1aebfc07d1cc9bdb3e294fff66993f0",
+  "dataset_sha256": "b33d54eb7da5eed619d97b054d1ca29031f8533bf3bf2b9729f1a4dc7661d09e",
+  "features_used": [
+    "home_home_matches_played",
+    "home_home_goals_scored_avg",
+    "home_home_goals_conceded_avg",
+    "away_away_matches_played",
+    "away_away_goals_scored_avg",
+    "away_away_goals_conceded_avg"
+  ],
+  "model_parameters": {
+    "away_goal_mean": 1.2989045383411582,
+    "home_goal_mean": 1.6040688575899844,
+    "max_goals": 32,
+    "maximum_goal_rate": 8.0,
+    "minimum_goal_rate": 0.05,
+    "prior_matches": 5.0
+  },
+  "model_type": "independent_team_strength_poisson",
+  "model_version": "expanded_history_v1",
+  "training_date_range": {
+    "end": "2026-10-30",
+    "start": "2025-08-08"
+  },
+  "training_goal_means": {
+    "away": 1.2989045383411582,
+    "home": 1.6040688575899844
+  },
+  "training_rows": 2556
+}

@@ -1,0 +1,30 @@
+{
+  "alpha": 1.0,
+  "estimator": "sklearn.linear_model.PoissonRegressor",
+  "feature_selection": "none",
+  "features": [
+    "home_attack_strength",
+    "home_defense_strength",
+    "away_attack_strength",
+    "away_defense_strength",
+    "home_form_points_5",
+    "away_form_points_5",
+    "home_goals_for_5",
+    "home_goals_against_5",
+    "away_goals_for_5",
+    "away_goals_against_5",
+    "elo_difference",
+    "home_history_matches",
+    "away_history_matches"
+  ],
+  "fit_intercept": true,
+  "goal_rate_clamp": [
+    0.05,
+    8.0
+  ],
+  "link": "log",
+  "max_iter": 1000,
+  "preprocessing": "Fold-only numeric median imputation, missing indicators, StandardScaler; final preprocessing fitted only on 2,556 training rows.",
+  "score_probability_grid_max_goals": 32,
+  "tol": 1e-07
+}

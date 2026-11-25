@@ -1,0 +1,333 @@
+{
+  "c_full_vs_leave_one_group_out": {
+    "elo": {
+      "accuracy": {
+        "bootstrap_replicates": 4000,
+        "ci_95_week_block_percentile": [
+          -0.014464633068081344,
+          0.0032532494853161355
+        ],
+        "cluster_definition": "outer fold x ISO UTC week",
+        "estimand": "mean accuracy difference (B minus A); negative favors B for losses, positive favors B for accuracy",
+        "paired_fixture_count": 1602,
+        "point_estimate": -0.0056179775280898875,
+        "seed": 73,
+        "week_clusters": 31
+      },
+      "brier": {
+        "bootstrap_replicates": 4000,
+        "ci_95_week_block_percentile": [
+          0.002069920026477966,
+          0.008299009979673574
+        ],
+        "cluster_definition": "outer fold x ISO UTC week",
+        "estimand": "mean brier difference (B minus A); negative favors B for losses, positive favors B for accuracy",
+        "paired_fixture_count": 1602,
+        "point_estimate": 0.0051574495736734114,
+        "seed": 73,
+        "week_clusters": 31
+      },
+      "log_loss": {
+        "bootstrap_replicates": 4000,
+        "ci_95_week_block_percentile": [
+          0.002918213372437492,
+          0.011699494671065683
+        ],
+        "cluster_definition": "outer fold x ISO UTC week",
+        "estimand": "mean log_loss difference (B minus A); negative favors B for losses, positive favors B for accuracy",
+        "paired_fixture_count": 1602,
+        "point_estimate": 0.007286326811239874,
+        "seed": 73,
+        "week_clusters": 31
+      },
+      "total_goal_abs_error": {
+        "bootstrap_replicates": 4000,
+        "ci_95_week_block_percentile": [
+          -0.0029140044133485867,
+          0.0018121191776167991
+        ],
+        "cluster_definition": "outer fold x ISO UTC week",
+        "estimand": "mean total_goal_abs_error difference (B minus A); negative favors B for losses, positive favors B for accuracy",
+        "paired_fixture_count": 1602,
+        "point_estimate": -0.00040523815052784197,
+        "seed": 73,
+        "week_clusters": 31
+      }
+    },
+    "form_points": {
+      "accuracy": {
+        "bootstrap_replicates": 4000,
+        "ci_95_week_block_percentile": [
+          0.0013314695059088988,
+          0.015365409238648677
+        ],
+        "cluster_definition": "outer fold x ISO UTC week",
+        "estimand": "mean accuracy difference (B minus A); negative favors B for losses, positive favors B for accuracy",
+        "paired_fixture_count": 1602,
+        "point_estimate": 0.008114856429463172,
+        "seed": 73,
+        "week_clusters": 31
+      },
+      "brier": {
+        "bootstrap_replicates": 4000,
+        "ci_95_week_block_percentile": [
+          -0.001600254558513788,
+          -0.0004250743329337964
+        ],
+        "cluster_definition": "outer fold x ISO UTC week",
+        "estimand": "mean brier difference (B minus A); negative favors B for losses, positive favors B for accuracy",
+        "paired_fixture_count": 1602,
+        "point_estimate": -0.0009987019210921373,
+        "seed": 73,
+        "week_clusters": 31
+      },
+      "log_loss": {
+        "bootstrap_replicates": 4000,
+        "ci_95_week_block_percentile": [
+          -0.0020852157270484784,
+          -0.00044243723147641335
+        ],
+        "cluster_definition": "outer fold x ISO UTC week",
+        "estimand": "mean log_loss difference (B minus A); negative favors B for losses, positive favors B for accuracy",
+        "paired_fixture_count": 1602,
+        "point_estimate": -0.0012443307798512006,
+        "seed": 73,
+        "week_clusters": 31
+      },
+      "total_goal_abs_error": {
+        "bootstrap_replicates": 4000,
+        "ci_95_week_block_percentile": [
+          -0.0015072377534221986,
+          -8.051529995457743e-06
+        ],
+        "cluster_definition": "outer fold x ISO UTC week",
+        "estimand": "mean total_goal_abs_error difference (B minus A); negative favors B for losses, positive favors B for accuracy",
+        "paired_fixture_count": 1602,
+        "point_estimate": -0.0007145253400106774,
+        "seed": 73,
+        "week_clusters": 31
+      }
+    },
+    "history_exposure": {
+      "accuracy": {
+        "bootstrap_replicates": 4000,
+        "ci_95_week_block_percentile": [
+          -0.0055561366806136684,
+          0.00439325090066441
+        ],
+        "cluster_definition": "outer fold x ISO UTC week",
+        "estimand": "mean accuracy difference (B minus A); negative favors B for losses, positive favors B for accuracy",
+        "paired_fixture_count": 1602,
+        "point_estimate": -0.0006242197253433209,
+        "seed": 73,
+        "week_clusters": 31
+      },
+      "brier": {
+        "bootstrap_replicates": 4000,
+        "ci_95_week_block_percentile": [
+          -2.451755401107361e-05,
+          0.0009476006431239628
+        ],
+        "cluster_definition": "outer fold x ISO UTC week",
+        "estimand": "mean brier difference (B minus A); negative favors B for losses, positive favors B for accuracy",
+        "paired_fixture_count": 1602,
+        "point_estimate": 0.0004548321352858752,
+        "seed": 73,
+        "week_clusters": 31
+      },
+      "log_loss": {
+        "bootstrap_replicates": 4000,
+        "ci_95_week_block_percentile": [
+          -4.9017138516939376e-05,
+          0.0013290547162245533
+        ],
+        "cluster_definition": "outer fold x ISO UTC week",
+        "estimand": "mean log_loss difference (B minus A); negative favors B for losses, positive favors B for accuracy",
+        "paired_fixture_count": 1602,
+        "point_estimate": 0.0006398070107881289,
+        "seed": 73,
+        "week_clusters": 31
+      },
+      "total_goal_abs_error": {
+        "bootstrap_replicates": 4000,
+        "ci_95_week_block_percentile": [
+          -0.005190883413954908,
+          0.004048662984450915
+        ],
+        "cluster_definition": "outer fold x ISO UTC week",
+        "estimand": "mean total_goal_abs_error difference (B minus A); negative favors B for losses, positive favors B for accuracy",
+        "paired_fixture_count": 1602,
+        "point_estimate": -0.0006495674378304291,
+        "seed": 73,
+        "week_clusters": 31
+      }
+    },
+    "recent_goals": {
+      "accuracy": {
+        "bootstrap_replicates": 4000,
+        "ci_95_week_block_percentile": [
+          0.0,
+          0.014003863798861366
+        ],
+        "cluster_definition": "outer fold x ISO UTC week",
+        "estimand": "mean accuracy difference (B minus A); negative favors B for losses, positive favors B for accuracy",
+        "paired_fixture_count": 1602,
+        "point_estimate": 0.00686641697877653,
+        "seed": 73,
+        "week_clusters": 31
+      },
+      "brier": {
+        "bootstrap_replicates": 4000,
+        "ci_95_week_block_percentile": [
+          -0.0016580414597003826,
+          0.0005265568669694116
+        ],
+        "cluster_definition": "outer fold x ISO UTC week",
+        "estimand": "mean brier difference (B minus A); negative favors B for losses, positive favors B for accuracy",
+        "paired_fixture_count": 1602,
+        "point_estimate": -0.0005982741848440428,
+        "seed": 73,
+        "week_clusters": 31
+      },
+      "log_loss": {
+        "bootstrap_replicates": 4000,
+        "ci_95_week_block_percentile": [
+          -0.002547119191829138,
+          0.0006012574929617381
+        ],
+        "cluster_definition": "outer fold x ISO UTC week",
+        "estimand": "mean log_loss difference (B minus A); negative favors B for losses, positive favors B for accuracy",
+        "paired_fixture_count": 1602,
+        "point_estimate": -0.0010229006021716606,
+        "seed": 73,
+        "week_clusters": 31
+      },
+      "total_goal_abs_error": {
+        "bootstrap_replicates": 4000,
+        "ci_95_week_block_percentile": [
+          0.00034441449635202385,
+          0.006801478920161815
+        ],
+        "cluster_definition": "outer fold x ISO UTC week",
+        "estimand": "mean total_goal_abs_error difference (B minus A); negative favors B for losses, positive favors B for accuracy",
+        "paired_fixture_count": 1602,
+        "point_estimate": 0.003609205386511379,
+        "seed": 73,
+        "week_clusters": 31
+      }
+    },
+    "team_strength": {
+      "accuracy": {
+        "bootstrap_replicates": 4000,
+        "ci_95_week_block_percentile": [
+          -0.012254901960784314,
+          0.0033380071241798535
+        ],
+        "cluster_definition": "outer fold x ISO UTC week",
+        "estimand": "mean accuracy difference (B minus A); negative favors B for losses, positive favors B for accuracy",
+        "paired_fixture_count": 1602,
+        "point_estimate": -0.004369538077403246,
+        "seed": 73,
+        "week_clusters": 31
+      },
+      "brier": {
+        "bootstrap_replicates": 4000,
+        "ci_95_week_block_percentile": [
+          0.001990726131741045,
+          0.00547376013004347
+        ],
+        "cluster_definition": "outer fold x ISO UTC week",
+        "estimand": "mean brier difference (B minus A); negative favors B for losses, positive favors B for accuracy",
+        "paired_fixture_count": 1602,
+        "point_estimate": 0.003773423856857589,
+        "seed": 73,
+        "week_clusters": 31
+      },
+      "log_loss": {
+        "bootstrap_replicates": 4000,
+        "ci_95_week_block_percentile": [
+          0.0024478085011162033,
+          0.007440004674405003
+        ],
+        "cluster_definition": "outer fold x ISO UTC week",
+        "estimand": "mean log_loss difference (B minus A); negative favors B for losses, positive favors B for accuracy",
+        "paired_fixture_count": 1602,
+        "point_estimate": 0.005054717376588114,
+        "seed": 73,
+        "week_clusters": 31
+      },
+      "total_goal_abs_error": {
+        "bootstrap_replicates": 4000,
+        "ci_95_week_block_percentile": [
+          -0.004498469728076902,
+          0.0057263216426303035
+        ],
+        "cluster_definition": "outer fold x ISO UTC week",
+        "estimand": "mean total_goal_abs_error difference (B minus A); negative favors B for losses, positive favors B for accuracy",
+        "paired_fixture_count": 1602,
+        "point_estimate": 0.0005344614456251463,
+        "seed": 73,
+        "week_clusters": 31
+      }
+    }
+  },
+  "controlled_estimator_C_minus_B": {
+    "accuracy": {
+      "bootstrap_replicates": 4000,
+      "ci_95_week_block_percentile": [
+        -0.016704101984509525,
+        0.01692555739027066
+      ],
+      "cluster_definition": "outer fold x ISO UTC week",
+      "estimand": "mean accuracy difference (B minus A); negative favors B for losses, positive favors B for accuracy",
+      "paired_fixture_count": 1602,
+      "point_estimate": -0.0006242197253433209,
+      "seed": 73,
+      "week_clusters": 31
+    },
+    "brier": {
+      "bootstrap_replicates": 4000,
+      "ci_95_week_block_percentile": [
+        -0.011999807098429759,
+        0.0007497121552516768
+      ],
+      "cluster_definition": "outer fold x ISO UTC week",
+      "estimand": "mean brier difference (B minus A); negative favors B for losses, positive favors B for accuracy",
+      "paired_fixture_count": 1602,
+      "point_estimate": -0.0053801230396969294,
+      "seed": 73,
+      "week_clusters": 31
+    },
+    "log_loss": {
+      "bootstrap_replicates": 4000,
+      "ci_95_week_block_percentile": [
+        -0.01797136219594817,
+        0.0007292116197117668
+      ],
+      "cluster_definition": "outer fold x ISO UTC week",
+      "estimand": "mean log_loss difference (B minus A); negative favors B for losses, positive favors B for accuracy",
+      "paired_fixture_count": 1602,
+      "point_estimate": -0.008265649119457675,
+      "seed": 73,
+      "week_clusters": 31
+    },
+    "total_goal_abs_error": {
+      "bootstrap_replicates": 4000,
+      "ci_95_week_block_percentile": [
+        -0.04717956017022552,
+        0.015759398840587524
+      ],
+      "cluster_definition": "outer fold x ISO UTC week",
+      "estimand": "mean total_goal_abs_error difference (B minus A); negative favors B for losses, positive favors B for accuracy",
+      "paired_fixture_count": 1602,
+      "point_estimate": -0.016018509982041115,
+      "seed": 73,
+      "week_clusters": 31
+    }
+  },
+  "limitations": [
+    "Week blocks retain within-week score/date clustering but do not make recurring teams in different weeks independent.",
+    "Only four validation periods are available; intervals are exploratory, not confirmatory."
+  ],
+  "method": "Paired moving-block bootstrap resampling fold-by-ISO-UTC-week clusters (4,000 replicates, seed 73)."
+}

@@ -1,0 +1,40 @@
+{
+  "cutoff_date": "2026-10-31",
+  "dataset_sha256": "fef1f4a64294baf6fe93c833f13ab15bc0409e05d058c7520073ef2d58a1a718",
+  "methodology": {
+    "goal_rate_clamp": [
+      0.05,
+      8.0
+    ],
+    "prior_matches": 5.0,
+    "score_probability_grid_max_goals": 32,
+    "team_rates": "Venue-specific attack and defence goal averages shrunk toward training-period league means."
+  },
+  "model_parameters": {
+    "away_goal_mean": 1.4796116504854369,
+    "home_goal_mean": 1.7145631067961165,
+    "max_goals": 32,
+    "maximum_goal_rate": 8.0,
+    "minimum_goal_rate": 0.05,
+    "prior_matches": 5.0
+  },
+  "model_type": "independent_team_strength_poisson",
+  "model_version": "v1",
+  "team_features_used": [
+    "home_home_matches_played",
+    "home_home_goals_scored_avg",
+    "home_home_goals_conceded_avg",
+    "away_away_matches_played",
+    "away_away_goals_scored_avg",
+    "away_away_goals_conceded_avg"
+  ],
+  "training_date_range": {
+    "end": "2026-10-30",
+    "start": "2025-08-15"
+  },
+  "training_goal_means": {
+    "away": 1.4796116504854369,
+    "home": 1.7145631067961165
+  },
+  "training_rows": 515
+}

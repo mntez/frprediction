@@ -1,0 +1,200 @@
+{
+  "goals": {
+    "away_goals": {
+      "mae": 0.8813543273385875,
+      "rmse": 1.1079191560232755
+    },
+    "home_goals": {
+      "mae": 1.0012801635439301,
+      "rmse": 1.2482696426728763
+    },
+    "total_goals": {
+      "mae": 1.350139106284628,
+      "rmse": 1.6863243298942137
+    }
+  },
+  "one_x_two": {
+    "accuracy": 0.47947214076246336,
+    "brier_score": 0.6272842065177111,
+    "classwise_calibration": {
+      "away_win": {
+        "bins": [
+          {
+            "count": 26,
+            "lower_bound": 0.0,
+            "mean_probability": 0.07334782921552771,
+            "observed_rate": 0.07692307692307693,
+            "upper_bound": 0.1
+          },
+          {
+            "count": 141,
+            "lower_bound": 0.1,
+            "mean_probability": 0.1535127450731358,
+            "observed_rate": 0.1773049645390071,
+            "upper_bound": 0.2
+          },
+          {
+            "count": 181,
+            "lower_bound": 0.2,
+            "mean_probability": 0.24867278375229346,
+            "observed_rate": 0.27624309392265195,
+            "upper_bound": 0.3
+          },
+          {
+            "count": 158,
+            "lower_bound": 0.3,
+            "mean_probability": 0.3447358875731027,
+            "observed_rate": 0.31645569620253167,
+            "upper_bound": 0.4
+          },
+          {
+            "count": 95,
+            "lower_bound": 0.4,
+            "mean_probability": 0.4465751883518044,
+            "observed_rate": 0.4,
+            "upper_bound": 0.5
+          },
+          {
+            "count": 53,
+            "lower_bound": 0.5,
+            "mean_probability": 0.5408291555655272,
+            "observed_rate": 0.5471698113207547,
+            "upper_bound": 0.6
+          },
+          {
+            "count": 21,
+            "lower_bound": 0.6,
+            "mean_probability": 0.6379302563067718,
+            "observed_rate": 0.47619047619047616,
+            "upper_bound": 0.7
+          },
+          {
+            "count": 6,
+            "lower_bound": 0.7,
+            "mean_probability": 0.7370225657375071,
+            "observed_rate": 0.5,
+            "upper_bound": 0.8
+          },
+          {
+            "count": 1,
+            "lower_bound": 0.8,
+            "mean_probability": 0.8409810344601402,
+            "observed_rate": 1.0,
+            "upper_bound": 0.9
+          }
+        ],
+        "expected_calibration_error": 0.033203142453555455
+      },
+      "draw": {
+        "bins": [
+          {
+            "count": 4,
+            "lower_bound": 0.0,
+            "mean_probability": 0.07709178834005118,
+            "observed_rate": 0.0,
+            "upper_bound": 0.1
+          },
+          {
+            "count": 125,
+            "lower_bound": 0.1,
+            "mean_probability": 0.17011773233008592,
+            "observed_rate": 0.272,
+            "upper_bound": 0.2
+          },
+          {
+            "count": 496,
+            "lower_bound": 0.2,
+            "mean_probability": 0.24717411732980463,
+            "observed_rate": 0.27419354838709675,
+            "upper_bound": 0.3
+          },
+          {
+            "count": 57,
+            "lower_bound": 0.3,
+            "mean_probability": 0.3257884218429167,
+            "observed_rate": 0.24561403508771928,
+            "upper_bound": 0.4
+          }
+        ],
+        "expected_calibration_error": 0.04547687457707128
+      },
+      "home_win": {
+        "bins": [
+          {
+            "count": 2,
+            "lower_bound": 0.0,
+            "mean_probability": 0.07490710440234916,
+            "observed_rate": 0.0,
+            "upper_bound": 0.1
+          },
+          {
+            "count": 34,
+            "lower_bound": 0.1,
+            "mean_probability": 0.16216427403146957,
+            "observed_rate": 0.23529411764705882,
+            "upper_bound": 0.2
+          },
+          {
+            "count": 93,
+            "lower_bound": 0.2,
+            "mean_probability": 0.24851938796113923,
+            "observed_rate": 0.21505376344086022,
+            "upper_bound": 0.3
+          },
+          {
+            "count": 135,
+            "lower_bound": 0.3,
+            "mean_probability": 0.3487772835614049,
+            "observed_rate": 0.35555555555555557,
+            "upper_bound": 0.4
+          },
+          {
+            "count": 160,
+            "lower_bound": 0.4,
+            "mean_probability": 0.4472102795611974,
+            "observed_rate": 0.4125,
+            "upper_bound": 0.5
+          },
+          {
+            "count": 132,
+            "lower_bound": 0.5,
+            "mean_probability": 0.5439068771783498,
+            "observed_rate": 0.5075757575757576,
+            "upper_bound": 0.6
+          },
+          {
+            "count": 72,
+            "lower_bound": 0.6,
+            "mean_probability": 0.6462740374343978,
+            "observed_rate": 0.5416666666666666,
+            "upper_bound": 0.7
+          },
+          {
+            "count": 43,
+            "lower_bound": 0.7,
+            "mean_probability": 0.7320585807104848,
+            "observed_rate": 0.7441860465116279,
+            "upper_bound": 0.8
+          },
+          {
+            "count": 10,
+            "lower_bound": 0.8,
+            "mean_probability": 0.8357232268196926,
+            "observed_rate": 1.0,
+            "upper_bound": 0.9
+          },
+          {
+            "count": 1,
+            "lower_bound": 0.9,
+            "mean_probability": 0.9025190659881713,
+            "observed_rate": 0.0,
+            "upper_bound": 1.0
+          }
+        ],
+        "expected_calibration_error": 0.040485996673287145
+      }
+    },
+    "log_loss": 1.0450371241067635
+  },
+  "sample_count": 682
+}
